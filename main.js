@@ -9,15 +9,15 @@
    // https://firebase.google.com/docs/web/setup#available-libraries
  
    // Your web app's Firebase configuration
-   const firebaseConfig = {
-    apiKey: "AIzaSyCkKcN7I56QhkYtseaXA_D6Bi9hpZmYYqA",
-    authDomain: "fitnessx-45d3c.firebaseapp.com",
-    projectId: "fitnessx-45d3c",
-    storageBucket: "fitnessx-45d3c.appspot.com",
-    messagingSenderId: "440920657375",
-    appId: "1:440920657375:web:fcf3c7d8b38e670be5086a",
-    databaseURL:"https://fitnessx-45d3c-default-rtdb.firebaseio.com/"
-  };
+     const firebaseConfig = {
+      apiKey: "AIzaSyAjE4FdweXzIAB-k0LY1meXdyv9VmfmXm0",
+      authDomain: "fitnessx-8e353.firebaseapp.com",
+      projectId: "fitnessx-8e353",
+      storageBucket: "fitnessx-8e353.appspot.com",
+      messagingSenderId: "767560401693",
+      appId: "1:767560401693:web:b99d5233d62a0a514c57f4",
+      databaseURL:"https://fitnessx-8e353-default-rtdb.firebaseio.com/"
+    };
 
 
  
