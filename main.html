@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+ 
+    <link rel="stylesheet" href="css/style.css">
+    <title>Main</title>
+
+</head>
+<body style=" background-image: url('images/bck3.jpg');background-repeat: no-repeat;background-size: cover;">
+  
+  <nav class="navbarmain" >      
+       <div class="navbarmainlist">
+        <p class="heading" ><span id="fullname"></span></p>
+        <a  style="color:#fff;"href="#" onclick="logout(event)">Logout</a>   
+        <a id="open-profile" style="color:#fff;" href="#">Profile</a>
+
+<div id="profile-nav" class="profile-nav">
+  <div class="profile-content">
+    <!-- profile details -->
+    <h2 style="text-align: center;">Profile Details</h2>
+    <p>UserName:  <span id="fullname1"></span></p><hr>
+    <p>Email: <span id="email"></span></p><hr>
+    <p>Age: <span id="age"></span></p><hr>
+    <p>Gender:  <span id="gender"></span></p><hr>
+    <p>Activity: <span class="pencil" id="activity" onclick="editFieldActivity(event,'activity')"></span></p><hr>
+    <p>Weight: <span class="pencil" id="weight" onclick="editField(event,'weight')"></span></p><hr>
+    <p>TargetWeight: <span class="pencil" id="target_weight" onclick="editField(event,'target_weight')"></span></p><hr>
+    <p>TimeFrame: <span class="pencil" id="timeframe" onclick="editField(event,'timeframe')"></span></p><hr>
+    <p>Height: <span class="pencil" id="height" onclick="editField(event,'height')"></span></p><hr>
+    
+
+  </div>
+  <button id="close-profile">&times;</button>
+</div>
+ 
+    </div>
+
+</nav>
+<div class="mainclass">
+    <p class="subheading"> Your daily macro requirements,Based on your given inputs</p>
+  <div class="containerone">
+<div class="parentcard">
+    <div class="flip-card 1">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/cal3.png" alt="Avatar"  style="height: 53%;">
+          <i class="fa-regular fa-circle-user" style="color: #ffffff;"></i>
+          
+    <p class="cardone">Calories</p>
+          <span id="calories" class="cardspan"></span>
+        </div>
+        <div class="flip-card-back">
+          <h1>Calories?</h1> 
+          <p class="backcard">Don't just count your calories</p> 
+          <p class="subbackcard">"make your calories count"</p>
+        </div>
+      </div>
+    </div>
+
+    
+<div class="flip-card 2">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/protien.png" alt="Avatar" style="height: 55%;">
+      <p class="cardone">Protien</p>
+      <span id="protein" class="cardspan"></span>
+    </div>
+    <div class="flip-card-back">
+      <h1>Protien</h1> 
+      <p class="backcard">Protein is not just a nutrient</p> 
+      <p class="subbackcard"> "it's a lifestyle"</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card 3">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/carbs.png" alt="Avatar"style="height: 55%;">
+      <p class="cardone">Carbs</p>
+      <span id="carbs" class="cardspan"></span>
+    </div>
+    <div class="flip-card-back">
+      <h1>Carbs</h1> 
+      <p class="backcard">Don't fear carbs</p> 
+      <p class="subbackcard">"embrace them as source of strength"</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card 4">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/fat2.png  " alt="Avatar"style="height: 55%;">
+      <p class="cardone">Fats</p>
+      <span id="fats" class="cardspan"></span>
+    </div>
+    <div class="flip-card-back">
+      <h1>Fats</h1> 
+      <p class="backcard">"Fats can be delicious and satisfying</p> 
+      <p class="subbackcard">and still be a part of a healthy lifestyle"</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <!-- ye hai final -->
+    
+  </div>
+</div>
+
+
+<div class="containertable">
+
+  <div class="tablehead">
+  <p>Your Daily Summary</p>
+ </div>
+ <div class="maintable">
+  <div style="max-width: 100%; overflow-y: auto;">
+    <canvas id="myChart"></canvas>
+  </div>
+  
+ </div>
+ 
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
+  <script src="main.js" type="module"></script>
+ 
+
+</body>
+</html>
